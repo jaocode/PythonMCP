@@ -1,0 +1,14 @@
+#
+# NOTE: THIS DOCKERFILE IS GENERATED VIA "update.sh"
+#
+# PLEASE DO NOT EDIT IT DIRECTLY.
+#
+
+#$SET AUTOMAP 'M: \\192.168.16.5\_homexl_' 
+
+FROM python
+
+WORKDIR C:\\Automap
+COPY AUTOMAP.ps1 .
+COPY MAIN.ps1 .
+CMD [ "Powershell","-File","C:\\Automap\\MAIN.PS1" ]
