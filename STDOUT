@@ -1,28 +1,30 @@
-Sending build context to Docker daemon  10.24kB
+Sending build context to Docker daemon  77.31kB
 
-Step 1/5 : FROM python
- ---> 8bc0e54bc3e3
-Step 2/5 : WORKDIR C:\\Automap
- ---> Running in 2ab52e4f8ce9
-Removing intermediate container 2ab52e4f8ce9
- ---> 7ad06976be0d
-Step 3/5 : COPY AUTOMAP.ps1 .
- ---> 26017316240b
-Step 4/5 : COPY MAIN.ps1 .
- ---> e34028995a26
-Step 5/5 : CMD [ "Powershell","-File","C:\\Automap\\MAIN.PS1" ]
- ---> Running in e52ed0c94543
-Removing intermediate container e52ed0c94543
- ---> e4e869394d15
-Successfully built e4e869394d15
-Successfully tagged mcp/mluser:20200520195004_14573
-Untagged: mcp/mluser:weave_sample_mcppythonapps_python374_python374_on_disk
-Deleted: sha256:040c9bd676b74779817626e2faefd77bcdaed25fb669a797224022866138ff97
-Deleted: sha256:b4811c43e255b7572102a611bcdafef6ccb8963b8245d633f05923dbbc0fe903
-Deleted: sha256:92af65bd4cd9b5f1088270691cc607197be1c1e2ce7ee9f44fb8674316ea125d
-Deleted: sha256:282f8d000e980b435654175acd2aff04a316a2190db72698a5352c1603b0b1b1
-Deleted: sha256:8e52d3db29999020b3cbb3fcc77c7de9a82d4e4c0d7fbfb0e75b1eb87284af5f
-Deleted: sha256:7a8c47ed7637cebcb933245e4848fb3a254ee76997f974acdbeed7fd72761723
-Deleted: sha256:4bcd6731128a9b7dc0db83e9cb0dc68dc9c46d72e0a329f4bc85a62ef0b84567
-Deleted: sha256:4611276bce629a886822c81079254b5fec27cf48e90c793857be53d7d431980b
-Untagged: mcp/mluser:20200520195004_14573
+Step 1/6 : FROM python
+ ---> 77af2c44ff3d
+Step 2/6 : WORKDIR C:\\Automap
+ ---> Running in 0a32d408fecc
+Removing intermediate container 0a32d408fecc
+ ---> 2afb7775be5f
+Step 3/6 : COPY AUTOMAP.ps1 .
+ ---> 37b8b67c1e28
+Step 4/6 : COPY MAIN.ps1 .
+ ---> 9a95a03b8b5b
+Step 5/6 : COPY pow2.py .
+ ---> 9c55efc34a89
+Step 6/6 : CMD [ "Powershell","-File","C:\\Automap\\MAIN.PS1" ]
+ ---> Running in e7703955f904
+Removing intermediate container e7703955f904
+ ---> 4f3bb7efaeba
+Successfully built 4f3bb7efaeba
+Successfully tagged mcp/okunj:20200622134603_59128
+Untagged: mcp/okunj:git_pythonmcp_python374_on_users
+Deleted: sha256:d32c782523ac48490b11ec851e7bdaa8be0a61073aa736ea0d12ceebd4cd6e71
+Deleted: sha256:5a0c7ead5946b0f0af68ce39ace4021da76e5200bf7907816ab861597ab613e9
+Deleted: sha256:c86e5e7757d80091b5dd3d463a858e719d37b677646f735eb5b694728e55ada9
+Deleted: sha256:bf19874a35339fa3bddfb16ed974aeecd08514138b78abd0cf0df738bdd42b16
+Deleted: sha256:1f5624b6053199c6a3e570c988715f9873acb1066f9618909e2b1ebee0d7b1bb
+Deleted: sha256:b76d4b482692618fd3b9818f74ad00c24c40768011a5f58ee5b1235d80c13cc8
+Deleted: sha256:a6c68672b064455c56ad960e23670af04cb7065df7acdf6e089b8fcfd1eee2ae
+Deleted: sha256:b02272a3efd954eff9ce6e524518bf288757d0c8b0e825fbcd98af9ef97fc643
+Untagged: mcp/okunj:20200622134603_59128
