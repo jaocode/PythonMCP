@@ -1,30 +1,32 @@
-Sending build context to Docker daemon  77.31kB
+Sending build context to Docker daemon  82.43kB
 
 Step 1/6 : FROM python
  ---> 77af2c44ff3d
 Step 2/6 : WORKDIR C:\\Automap
- ---> Running in 0a32d408fecc
-Removing intermediate container 0a32d408fecc
- ---> 2afb7775be5f
+ ---> Running in 90e3239b80ea
+Removing intermediate container 90e3239b80ea
+ ---> efe5b94ad92f
 Step 3/6 : COPY AUTOMAP.ps1 .
- ---> 37b8b67c1e28
+ ---> cff93659b5f1
 Step 4/6 : COPY MAIN.ps1 .
- ---> 9a95a03b8b5b
+ ---> 45c11432735f
 Step 5/6 : COPY pow2.py .
- ---> 9c55efc34a89
+ ---> 0d4cd26c31fe
 Step 6/6 : CMD [ "Powershell","-File","C:\\Automap\\MAIN.PS1" ]
- ---> Running in e7703955f904
-Removing intermediate container e7703955f904
- ---> 4f3bb7efaeba
-Successfully built 4f3bb7efaeba
-Successfully tagged mcp/okunj:20200622134603_59128
-Untagged: mcp/okunj:git_pythonmcp_python374_on_users
-Deleted: sha256:d32c782523ac48490b11ec851e7bdaa8be0a61073aa736ea0d12ceebd4cd6e71
-Deleted: sha256:5a0c7ead5946b0f0af68ce39ace4021da76e5200bf7907816ab861597ab613e9
-Deleted: sha256:c86e5e7757d80091b5dd3d463a858e719d37b677646f735eb5b694728e55ada9
-Deleted: sha256:bf19874a35339fa3bddfb16ed974aeecd08514138b78abd0cf0df738bdd42b16
-Deleted: sha256:1f5624b6053199c6a3e570c988715f9873acb1066f9618909e2b1ebee0d7b1bb
-Deleted: sha256:b76d4b482692618fd3b9818f74ad00c24c40768011a5f58ee5b1235d80c13cc8
-Deleted: sha256:a6c68672b064455c56ad960e23670af04cb7065df7acdf6e089b8fcfd1eee2ae
-Deleted: sha256:b02272a3efd954eff9ce6e524518bf288757d0c8b0e825fbcd98af9ef97fc643
-Untagged: mcp/okunj:20200622134603_59128
+ ---> Running in ca018694f5d0
+Removing intermediate container ca018694f5d0
+ ---> a44d8b4835f4
+Successfully built a44d8b4835f4
+Successfully tagged mcp/linaniva:20200622152918_59429
+Untagged: mcp/linaniva:git_pythonmcp_python374_on_users
+Deleted: sha256:de26403430675c99b6dfe5efc475915357bf6fa9ea17b4998104bfaefa9de2a2
+Deleted: sha256:694862a879e90568b88684fc5b635a10385373efce12f06b7b490ce93b870a0c
+Deleted: sha256:c4832bc286afadc1a36bfeca96281e207a6a83924f4637021a76566ec0541f2e
+Deleted: sha256:ba737d040ff4a128e45a98ebc1e615e857fb6e7e2eeabc150d249f9da4b87aa2
+Deleted: sha256:507db9556b26a9a1c8e15fab8c1820c6e5bc2411db6340b4eddae3f75da185a5
+Deleted: sha256:4fa040e01c042f9161328a2df6e5d8effe7995dd5a05311b7fb6f34cad1b8353
+Deleted: sha256:cecd2fb9c230619f71188a2ba5eb8732ef465b75922713cabdac8560c006ac70
+Deleted: sha256:137a2d159c178e598eeba743646fe91871d55ab1a889f37b7e7362ec10a708de
+Deleted: sha256:6d300dc589b2a8eec62b3b0b825c0930226287addf131964d60744a51997188d
+Deleted: sha256:d34573fe549570f4814912f16a6887cbb5f71401bdc8fdc5d90c5b8c5c9c8ba8
+Untagged: mcp/linaniva:20200622152918_59429
