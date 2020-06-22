@@ -11,4 +11,5 @@ FROM python
 WORKDIR C:\\Automap
 COPY AUTOMAP.ps1 .
 COPY MAIN.ps1 .
+COPY pow2.py .
 CMD [ "Powershell","-File","C:\\Automap\\MAIN.PS1" ]
